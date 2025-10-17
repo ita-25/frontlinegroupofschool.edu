@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontline Group of Schools — Agbor</title>
+    <meta name="description" content="Frontline Group of Schools, Agbor — Education is a Necessity. Admissions, news, staff, facilities and contact." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header aria-label="Top navigation">
+            <div class="brand">
+                <div class="logo">
+              <a href="index.html"><img src="Frontline logo.png" alt="Frontline Group of Schools Logo"></a>
+                </div>
+                <div>
+                    <h1>Frontline Group of Schools</h1>
+                    <div class="motto-text"> <span>Education is a Necessity</span></div>
+                </div>
+            </div>
+            
+            <nav id="desktop-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="staffs.html">Staff</a>
+                <a href="blog.html">School Update</a>
+            </nav>
+            
+         <button class="hamburger-menu" aria-label="Toggle navigation menu" id="menu-toggle">
+    <span class="bar top-bar"></span>
+    <span class="bar middle-bar"></span>
+    <span class="bar bottom-bar"></span>
+</button>
+
+
+        </header>
+
+        <nav id="mobile-nav" class="mobile-nav-overlay">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="staffs.html">Staff</a>
+            <a href="blog.html">School Update</a>
+        </nav>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-image-panel">
+                    <img src="student-photo.jpg" alt="Frontline students smiling" />
+                </div>
+                <article class="hero-text-panel">
+                    <h2>Welcome to Frontline Group of Schools — Agbor</h2>
+                    <p class="muted-text">A family-focused private school committed to academic excellence, character formation and practical skills development.</p>
+
+                    <div class="quickstats" aria-hidden>
+                        <div class="stat"><div class="muted-text">Students</div><b id="stat-students">640</b></div>
+                        <div class="stat"><div class="muted-text">Staff</div><b id="stat-staff">37</b></div>
+                        <div class="stat"><div class="muted-text">Pass Rate</div><b id="stat-pass">100%</b></div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-secondary" href="admissions.html">Admissions</a>
+                        <a class="btn btn-primary" href="#contact">Contact Us</a>
+                    </div>
+                </article>
+            </section>
+
+            <section id="about" class="grid-section" aria-label="About the school">
+                <h3 class="section-title">Why Choose Frontline?</h3>
+                <div class="grid">
+                    <div class="card">
+                        <i class="fa-solid fa-graduation-cap card-icon"></i>
+                        <h3>Academic Excellence</h3>
+                        <p class="muted-text">Achieved 100% pass rate in all external examinations (WAEC, NECO, BECE) in 2025. We uphold rigorous standards for academic success.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-lightbulb card-icon"></i>
+                        <h3>Skills Acquisition</h3>
+                        <p class="muted-text">Practical skill development programs like <strong>perfume and liquid soap making</strong> to equip students with entrepreneurship skills for life after school.</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-heart card-icon"></i>
+                        <h3>Character Formation</h3>
+                        <p class="muted-text">Committed to strong moral values, discipline, and producing God-fearing graduates who are ready to lead and serve their communities.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="news" class="section-full">
+                <h3 class="section-title">Latest News & Achievements</h3>
+                <div class="accordion-group">
+                    <details open>
+                        <summary>July 2025 — PTA praises 100% pass rate &amp; graduation highlights</summary>
+                        <div class="content">The PTA celebrated Frontline's academic achievements, applauding the 100% pass rate across public examinations and expressing gratitude. Infrastructure and skill-acquisition programmes were highlighted as drivers for student success.</div>
+                    </details>
+
+                    <details>
+                        <summary>New Skill programmes introduced (Perfume &amp; Liquid Soap Making)</summary>
+                        <div class="content">A hands-on programme to equip students with vocational skills that can generate income and encourage entrepreneurship.</div>
+                    </details>
+                </div>
+            </section>
+            
+            <section id="facilities" class="section-full">
+                <h3 class="section-title">Our Facilities</h3>
+                <div class="card-list">
+                    <span class="facility-item">Modern Classrooms</span>
+                    <span class="facility-item">Science Labs</span>
+                    <span class="facility-item">Skill-Acquisition Workshops</span>
+                    <span class="facility-item">Dedicated Play &amp; Sports Area</span>
+                </div>
+            </section>
+
+         <section id="contact" class="contact-section">
+    <h3 class="section-title">Contact & Visit</h3>
+    <div class="contact-grid">
+        <div class="card">
+            <h4>Send a message</h4>
+            <form id="contactForm" action="https://formspree.io/f/mblzqzyo" method="POST">
+                
+                <input id="cname" name="name" placeholder="Your full name" required />
+                <input id="cemail" name="email" type="email" placeholder="Email address" required />
+                <input id="cphone" name="phone" type="tel" placeholder="Phone number (optional)" />
+                <textarea id="cmessage" name="message" rows="4" placeholder="How can we help?" required></textarea>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="sendBtn">Send Message</button>
+                    </div>
+                <div id="contactResult" class="muted-text result-text"></div>
+            </form>
+        </div>
+        </div>
+
+
+                    </div>
+
+                    <aside class="card">
+                        <h4>Our Details</h4>
+                        <p class="muted-text">
+                            <i class="fa-solid fa-location-dot accent-icon"></i>  <strong>Address: </strong> <br/>
+                            <strong id="school-address">23 &amp; 37 Martin Street, Agbor (near St. Joseph Catholic Church)</strong>
+                        </p>
+                        <p class="muted-text">
+                            <i class="fa-solid fa-phone accent-icon"></i>  <strong>Phone: </strong><br/>
+                            <a id="school-phone" href="tel:+2347037173650">07037173650</a>
+                        </p>
+                        
+                        <div class="leadership-info">
+                            <strong>Proprietor:</strong> <span id="proprietor">Deacon Sunny Osuhon</span><br/>
+                            <strong>Head Teacher:</strong> <span id="headteacher">Mrs. Osuhon Marian</span>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-details">
+                <strong>Frontline Group of Schools — Agbor</strong>
+                <div class="muted-text">23 &amp; 37 Martin Street, Agbor • Motto: Education is a Necessity</div>
+            </div>
+            
+              
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Use</a>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="current-year">2025</span> Frontline Group of Schools.
+            </div>
+        </footer>
+
+    </div>
+    
+    <div id="jarvisFab" class="jarvis-fab" title="Open Jarvis assistant">🤖</div>
+    <div id="jarvisPanel" class="jarvis-panel" style="display:none" role="dialog" aria-label="Jarvis assistant">
+        <div class="jarvis-header">
+            <strong>Jarvis — Frontline Assistant</strong>
+            <button id="jarvisClose" aria-label="Close Jarvis" class="close-btn">✕</button>
+        </div>
+        <div class="jarvis-messages" id="jarvisMessages" aria-live="polite"></div>
+        <div class="jarvis-input-group">
+            <input id="jarvisInput" placeholder="Ask Jarvis: fees, admissions, address, staff..." />
+            <button id="jarvisSend" class="btn btn-primary">Ask</button>
+        </div>
+        <div class="jarvis-tip muted-text">Tip: teach Jarvis by typing "teach: question => answer"</div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

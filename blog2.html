@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontline Group of Schools — Agbor</title>
+    <meta name="description" content="Frontline Group of Schools, Agbor — Education is a Necessity. Admissions, news, staff, facilities and contact." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header aria-label="Top navigation">
+            <div class="brand">
+                <div class="logo">
+              <a href="index.html"><img src="Frontline logo.png" alt="Frontline Group of Schools Logo"></a>
+                </div>
+                <div>
+                    <h1>Frontline Group of Schools</h1>
+                    <div class="motto-text"> <span>Education is a Necessity</span></div>
+                </div>
+            </div>
+            
+            <nav id="desktop-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="admissions.html">Admissions</a>
+                <a href="staffs.html">Staff</a>
+                <a href="blog.html">School Update</a>
+            </nav>
+            
+         <button class="hamburger-menu" aria-label="Toggle navigation menu" id="menu-toggle">
+    <span class="bar top-bar"></span>
+    <span class="bar middle-bar"></span>
+    <span class="bar bottom-bar"></span>
+</button>
+
+
+        </header>
+
+        <nav id="mobile-nav" class="mobile-nav-overlay">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="staffs.html">Staff</a>
+            <a href="blog.html">School Update</a>
+        </nav>
+
+<main>
+    <section class="page-hero hero-blog">
+        <div class="container">
+            <h2 class="hero-title">School Updates & News</h2>
+            <p class="hero-subtitle muted-text">Stay informed on events, academic achievements, announcements, and the vibrant life at Frontline.</p>
+        </div>
+    </section>
+
+    <section id="blog-posts" class="section-padded">
+        <div class="container blog-grid">
+            
+            <article class="post-card card card-featured">
+                
+                <div class="post-image-container">
+                    <img src="path/to/students-or-pta-photo.jpg" alt="Photo of students or staff celebrating exam success" class="post-image" />
+                </div>
+                
+                <div class="post-content">
+                    <div class="post-meta muted-text">
+                        <span class="post-date"><i class="fa-solid fa-calendar-day"></i> October 16, 2025</span> | 
+                        <span class="post-tag"><i class="fa-solid fa-tag"></i> Academics</span>
+                    </div>
+                    
+                    <h3 class="post-title">Unprecedented Success: Frontline Achieves 100% Pass Rate in All External Exams!</h3>
+                    
+                    <p class="post-snippet muted-text">
+                        Frontline proudly announces a perfect record across all 2025 external examinations (WAEC, NECO, BECE, Primary 6). This historic milestone was recognized by the PTA and covered by Ika Weekly Newspaper.
+                    </p>
+                    
+                    <button class="btn btn-primary-outline btn-small modal-trigger" data-modal-target="#passRateModal">Read Details</button>
+                </div>
+            </article>
+
+            <article class="post-card card">
+                
+                <div class="post-image-container">
+                    <img src="path/to/pta-chairman-or-staff-photo.jpg" alt="PTA Chairman or staff photo" class="post-image" />
+                </div>
+                
+                <div class="post-content">
+                    <div class="post-meta muted-text">
+                        <span class="post-date"><i class="fa-solid fa-calendar-day"></i> August 1, 2025</span> | 
+                        <span class="post-tag"><i class="fa-solid fa-tag"></i> Community, Trust</span>
+                    </div>
+                    <h3 class="post-title">Parental Confidence: PTA Chairman Calls Frontline 'The Best Among Others'</h3>
+                    <p class="post-snippet muted-text">
+                        During the 2025 graduation ceremony, PTA Chairman, Rev. Richard Ijeagun, publicly endorsed the school, stating, "Enrolling my children at Frontline... has confirmed the school's academic value."
+                        </p>
+                     <button class="btn btn-primary-outline btn-small modal-trigger" data-modal-target="#endorsementModal" class="btn-text read-more">View Full Endorsement →</button>
+                </div>
+            </article>
+            
+            <article class="post-card card">
+                
+                <div class="post-image-container">
+                    <img src="path/to/lab-practice-or-students-in-class-photo.jpg" alt="Students engaged in a science laboratory practice session" class="post-image" />
+                </div>
+                
+                <div class="post-content">
+                    <div class="post-meta muted-text">
+                        <span class="post-date"><i class="fa-solid fa-calendar-day"></i> September 10, 2025</span> | 
+                        <span class="post-tag"><i class="fa-solid fa-tag"></i> Programs, Practical</span>
+                    </div>
+                    <h3 class="post-title">Equipping Students for Life: Focus on Advanced Laboratory Practice</h3>
+                    <p class="post-snippet muted-text">
+                        Beyond academics, Frontline emphasizes **Laboratory Practice** to equip students with intellectual and practical competence, bridging the gap between theory and real-world application, a core part of our skill development.
+                    </p>
+                     <button class="btn btn-primary-outline btn-small modal-trigger" data-modal-target="#programsModal" class="btn-text read-more">Explore Programs →</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+    
+    <div class="modal" id="passRateModal" tabindex="-1" aria-labelledby="passRateModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="passRateModalLabel">Full Details: 100% External Exam Pass Rate</h5>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+         <div class="modal-body">
+            <p>Frontline Group of Schools achieved a perfect record across all major external examinations in 2025: **WAEC, NECO, BECE (JSS3), and Primary 6 Cognitive exams**.</p>
+            <p>This achievement was formally recognized by the Parents Teachers Association (PTA) and received media coverage from Ika Weekly Newspaper.</p>
+            <h6>Graduation 2025 Figures:</h6>
+            <ul>
+                <li>30 graduates from Nursery 3</li>
+                <li>45 graduates from Primary 6</li>
+                <li>40 graduates from JSS3</li>
+                <li>58 graduates from SS3</li>
+            </ul>
+            <p class="text-center mt-4 text-muted fst-italic">This success is a testament to our 37 qualified, competent, and God-fearing educators committed to raising students in both academics and character.</p>
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary-outline modal-close-btn">Close</button>
+          </div>
+        </div>
+        <div class="modal" id="endorsementModal" tabindex="-1" aria-labelledby="endorsementModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="endorsementModalLabel">PTA Chairman Endorsement</h5>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>The commitment of Frontline to producing excellent results was publicly recognized during the 2025 Graduation Ceremony by the **PTA Chairman, Rev. Richard Ijeagun**.</p>
+                <blockquote class="testimonial-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>"Enrolling my children at Frontline Group of Schools has confirmed the school's academic value. I can confidently say that Frontline Group of Schools, Agbor, is **the best among others**."</p>
+                </blockquote>
+                <p class="text-center mt-4 text-muted fst-italic">This recognition is a powerful testament to the community's trust in our 37 dedicated and qualified educators.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary-outline modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+    <div class="modal" id="programsModal" tabindex="-1" aria-labelledby="programsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="programsModalLabel">Practical & Skill Acquisition Programs</h5>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Frontline Group of Schools provides comprehensive education that includes **intellectual and practical competence** to equip students for life outside the classroom.</p>
+                
+                <h6>Core Practical Focus:</h6>
+                <ul>
+                    <li>**Advanced Laboratory Practice:** Bridging theory and real-world application in Sciences.</li>
+                    <li>**Digital Literacy:** Training students in essential modern technology skills.</li>
+                    <li>**Vocational Skills:** Includes hands-on training for marketable skills like **perfume making** and **liquid soap production**.</li>
+                </ul>
+                <p class="text-center mt-4 text-muted fst-italic">Our goal is to produce students who are not just graduates, but skilled, competent, and ethical ambassadors of excellence.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary-outline modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+
+
+
+ <footer>
+            <div class="footer-details">
+                <strong>Frontline Group of Schools — Agbor</strong>
+                <div class="muted-text">23 &amp; 37 Martin Street, Agbor • Motto: Education is a Necessity</div>
+            </div>
+            
+              
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Use</a>
+            </div>
+            
+            <div class="copyright">
+                &copy; <span id="current-year">2025</span> Frontline Group of Schools.
+            </div>
+        </footer>
+
+    </div>
+    
+    <div id="jarvisFab" class="jarvis-fab" title="Open Jarvis assistant">🤖</div>
+    <div id="jarvisPanel" class="jarvis-panel" style="display:none" role="dialog" aria-label="Jarvis assistant">
+        <div class="jarvis-header">
+            <strong>Jarvis — Frontline Assistant</strong>
+            <button id="jarvisClose" aria-label="Close Jarvis" class="close-btn">✕</button>
+        </div>
+        <div class="jarvis-messages" id="jarvisMessages" aria-live="polite"></div>
+        <div class="jarvis-input-group">
+            <input id="jarvisInput" placeholder="Ask Jarvis: fees, admissions, address, staff..." />
+            <button id="jarvisSend" class="btn btn-primary">Ask</button>
+        </div>
+        <div class="jarvis-tip muted-text">Tip: teach Jarvis by typing "teach: question => answer"</div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
