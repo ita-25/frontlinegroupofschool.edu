@@ -6,4 +6,16 @@
     <url>
         <loc>https://frontlinegroupofschool.vercel.app/about.html</loc>
     </url>
-    </urlset>
+    <url>
+        <loc>https://frontlinegroupofschool.vercel.app/gallery.html</loc>
+    </url>
+    <url>
+        <loc>https://frontlinegroupofschool.vercel.app/admission.html</loc>
+    </url>
+    <url>
+        <loc>https://frontlinegroupofschool.vercel.app/staffs.html</loc>
+    </url>
+    <url>
+        <loc>https://frontlinegroupofschool.vercel.app/blog.html</loc>
+    </url>
+</urlset>
