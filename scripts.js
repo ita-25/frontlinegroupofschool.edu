@@ -360,3 +360,78 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// --- HOMEPAGE IMAGE SLIDER FUNCTIONALITY ---
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderContainer = document.getElementById('homepage-slider');
+    if (!sliderContainer) return; // Exit if the slider is not on the page
+
+    const sliderWrapper = sliderContainer.querySelector('.slider-container');
+    const slides = sliderContainer.querySelectorAll('.slide');
+    const prevButton = sliderContainer.querySelector('.slider-nav.prev');
+    const nextButton = sliderContainer.querySelector('.slider-nav.next');
+    const dotsContainer = sliderContainer.querySelector('.slider-dots');
+    const totalSlides = slides.length;
+    let currentSlide = 0;
+    let slideInterval;
+
+    // 1. Initialize Dots
+    const createDots = () => {
+        slides.forEach((_, index) => {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                moveToSlide(index);
+                resetAutoSlide();
+            });
+            dotsContainer.appendChild(dot);
+        });
+    };
+
+    // 2. Core Slide Movement Function
+    const moveToSlide = (index) => {
+        if (index < 0) {
+            index = totalSlides - 1; // Loop back to the end
+        } else if (index >= totalSlides) {
+            index = 0; // Loop back to the start
+        }
+        
+        currentSlide = index;
+        const offset = -currentSlide * 100;
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+
+        // Update dots
+        const dots = dotsContainer.querySelectorAll('.dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentSlide);
+        });
+    };
+
+    // 3. Navigation Handlers
+    const showNextSlide = () => {
+        moveToSlide(currentSlide + 1);
+    };
+
+    const showPrevSlide = () => {
+        moveToSlide(currentSlide - 1);
+    };
+
+    nextButton.addEventListener('click', showNextSlide);
+    prevButton.addEventListener('click', showPrevSlide);
+    
+    // 4. Automatic Sliding
+    const startAutoSlide = () => {
+        slideInterval = setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+    };
+
+    const resetAutoSlide = () => {
+        clearInterval(slideInterval);
+        startAutoSlide();
+    };
+
+    // Initialize and start
+    createDots();
+    startAutoSlide();
+});
