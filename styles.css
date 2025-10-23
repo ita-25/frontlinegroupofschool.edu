@@ -1501,14 +1501,15 @@ footer {
     border-color: var(--primary-navy);
 }
 
-/* Mobile Adjustment: Make button smaller on small screens */
+/* Mobile Adjustment for Slider Button */
 @media (max-width: 768px) {
     .slider-gallery-btn {
-        bottom: 30px;
-        padding: 10px 20px;
-        font-size: 1em;
+        bottom: 20px; /* Moves it slightly closer to the edge */
+        padding: 8px 18px; /* Significantly reduces the button size */
+        font-size: 0.9em; /* Reduces font size */
     }
 }
+
 
 
 /* --- HOMEPAGE FEATURE SECTIONS (About & Staff) --- */
