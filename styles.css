@@ -1509,3 +1509,76 @@ footer {
         font-size: 1em;
     }
 }
+
+
+/* --- HOMEPAGE FEATURE SECTIONS (About & Staff) --- */
+
+/* ABOUT US FEATURE CARD (To make it stand out) */
+.feature-card {
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    color: fffff; /* Text color for the primary-bg */
+}
+
+.feature-card .feature-content {
+    padding: 40px;
+    flex: 2; /* Takes up more space on desktop */
+}
+
+.feature-card .feature-title {
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.feature-card .feature-snippet {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.feature-card .feature-image-container {
+    flex: 1; /* Takes up less space on desktop */
+    min-height: 350px;
+}
+
+.feature-card .feature-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overriding the default button style for this section */
+.feature-card .btn-secondary-outline {
+    background: white;
+    color: var(--primary-navy);
+    border-color: white;
+}
+.feature-card .btn-secondary-outline:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+/* Mobile Adjustments for Feature Card */
+@media (max-width: 900px) {
+    .feature-card {
+        flex-direction: column; /* Stacks vertically */
+        text-align: center;
+    }
+    .feature-card .feature-content {
+        padding: 30px 20px;
+        order: 2; /* Content below image on mobile */
+    }
+    .feature-card .feature-image-container {
+        order: 1; /* Image above content on mobile */
+        width: 100%;
+        min-height: 250px;
+    }
+    .feature-card .feature-title {
+        font-size: 1.8em;
+    }
+}
