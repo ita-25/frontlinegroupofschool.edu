@@ -1583,3 +1583,81 @@ footer {
         font-size: 1.8em;
     }
 }
+
+
+/* --- STAFF HIGHLIGHT CARD STYLING (Two-Column Layout) --- */
+.highlight-card.staff-feature-grid {
+    /* Use CSS Grid for the two-column layout */
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Text column (1) slightly smaller than Image column (1.2) */
+    gap: 40px;
+    align-items: center; 
+    
+    background: white;
+    padding: 40px; 
+    border-radius: var(--radius-medium);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-small); 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    text-align: left;
+}
+
+/* Ensure text alignment is clean within the grid */
+.staff-feature-grid .staff-text-content .section-title,
+.staff-feature-grid .staff-text-content p {
+    text-align: left;
+}
+
+/* --- STAFF IMAGE COLLAGE STYLING --- */
+.staff-image-collage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.staff-image-collage .collage-main-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-small);
+}
+
+.staff-image-collage .collage-small-imgs {
+    display: flex;
+    gap: 10px;
+}
+
+.staff-image-collage .collage-small-imgs img {
+    flex: 1;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: var(--radius-small);
+}
+
+/* Mobile Responsiveness: Stack content vertically */
+@media (max-width: 800px) {
+    .highlight-card.staff-feature-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        padding: 30px;
+        gap: 20px;
+        text-align: center;
+    }
+    .staff-feature-grid .staff-text-content {
+        order: 2; /* Text goes below the images */
+    }
+    .staff-feature-grid .staff-text-content .section-title,
+    .staff-feature-grid .staff-text-content p {
+        text-align: center;
+    }
+    .staff-image-collage {
+        order: 1; /* Images go above the text */
+    }
+    .staff-image-collage .collage-main-img {
+        height: 200px;
+    }
+    .staff-image-collage .collage-small-imgs img {
+        height: 80px;
+    }
+}
